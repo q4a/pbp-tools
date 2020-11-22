@@ -1,0 +1,17 @@
+# Based on https://github.com/ldionne/hana/blob/master/.travis.yml
+dist: focal
+cache: ccache
+language: cpp
+
+os:
+- linux
+
+matrix:
+  include:
+    - arch: arm64
+
+script:
+- INSTALLDEPS = debian ./pbp-install-libva
+
+notifications:
+  email: false
