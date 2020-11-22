@@ -8,6 +8,7 @@ arch: arm64
 install: skip
 
 script:
+- cat /etc/apt/sources.list
 - INSTALLDEPS=debian ./pbp-install-libva
 
 notifications:
