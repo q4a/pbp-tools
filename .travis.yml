@@ -8,7 +8,7 @@ arch: arm64
 install: skip
 
 script:
-- INSTALLDEPS = debian ./pbp-install-libva
+- INSTALLDEPS=debian ./pbp-install-libva
 
 notifications:
   email: false
